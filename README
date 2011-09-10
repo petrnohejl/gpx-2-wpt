@@ -1,0 +1,34 @@
+--------------------------------------------------------------------------------
+
+GPX 2 WPT
+(c) 2008 Petr Nohejl
+
+GPX2WPT převádí waypointy ve formátu GPX Pocket Query, získané např. programem
+CachePrinter, na formát WPT, který používá program Ozi Explorer. Tento program
+je užitečný pro hráče hry Geocaching, kteří používají k GPS navigaci program
+Ozi Explorer. Program vygeneruje seznam keší a do popisku uloží jejich velikost
+(Micro, Small, Regular, Large, Other), obtížnost, terén a hint. Typy keše jsou
+barevně rozlišeny. Využitím CachePrinter a GPX2WPT lze tedy snadno a rychle
+importovat cache do Ozi Exploreru.  
+
+--------------------------------------------------------------------------------
+
+Instalace:
+
+GPX2WPT je konzolová aplikace (spouští se v příkazovém řádku) a je napsána v
+jazyce Python 2.6. Pro její spuštění je třeba mít nainstalován interpret jazyka
+Python, který lze stáhnout na adrese: www.python.org. 
+
+--------------------------------------------------------------------------------
+
+Ovládání:
+
+gpx2wpt gpx_file wpt_file - zkonvertuje soubor GPX na WPT, gpx_file je název
+                            vstupního GPX souboru (např. waypoint.xml), wpt_file
+                            je název výstupního WPT souboru který se vytvoří
+                            (např. output.wpt), příklad použití:
+                            gpx2wpt.py D:\waypoint.xml output.wpt
+                            
+gpx2wpt -h - zobrazí nápovědu
+
+--------------------------------------------------------------------------------
